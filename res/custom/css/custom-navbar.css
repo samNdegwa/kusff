@@ -1,0 +1,194 @@
+body{
+    /*background-color: #f7f8fa;*/
+}
+.mynav-logo{
+    /*margin: 0px -15px;*/
+    height: 70px;
+}
+.mynav-brand{
+
+}
+
+.mynav{
+    z-index: 120;
+    background: rgba(0,0,0,0.9);
+    margin-bottom: 21px;
+    min-height: 70px;
+}
+.mynav-links{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    z-index: 120;
+}
+.mynav .mynav-caret{
+    display: none;
+}
+.navScolled{
+    background: rgb(99, 102, 106);
+}
+.mynav-links li,.mynav-brand{
+    display: inline-block;
+    padding: 0;
+    margin: 1px 3px;
+}
+.mynav-links li .mynav-link{
+    display: inline-block;
+    border-top:5px solid transparent;
+    padding: 22px 20px;
+    transition: .5s;
+    color: #fff;
+    text-decoration: none;
+}
+.mynav-btn{
+    display: inline-block;
+    border-top:2px solid transparent;
+    padding: 22px 20px;
+    text-decoration: none;
+}
+.mynav-btn{
+    display: none;
+}
+.mynav-links li .menu-options-multiple{
+    position: absolute;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid;
+    opacity: 0;
+    z-index: 5;
+    height: 176px;
+    height: 0px;
+    margin-top: -1px;
+    /*transition: .5s;*/
+    padding: 3px 13px;
+    background-color: #fff;
+}
+
+.mynav-links li .menu-options{
+    position: absolute;
+    background-color: #fff;
+    padding: 2px 20px 2px 2px;
+    text-align: left;
+    z-index: 5;
+    opacity: 0;
+    border-bottom: 1px solid;
+    /*transition: .5s;*/
+    min-width: 200px;
+}
+.menu-options-multiple .mymenu{
+    padding: 10px 5px;
+    float: left;
+    width: 25%;
+}
+
+.menu-option-title{
+    font-weight: 400;
+    transition: .2s;
+    padding-left: 20px;
+    padding-top: 7px;
+    width: 75%;
+    border-radius: 5px 4px 0 0;
+    border-bottom: 1px solid;
+}
+.menu-option-title:hover{
+    color:#fff;
+    background: #000;
+}
+.menu-option-body{
+
+}
+.menu-option-body a{
+    display: block;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+.menu-option-body a:hover{
+    transition: .3s;
+}
+/*Response ive CSS*/
+@media(max-width: 768px){
+    .mynav .mynav-btn{
+        display: inline-block;
+        color: #fff;
+    }
+    .mynav .mynav-links{
+        position: fixed;
+        right: 0;
+        /*right: -70%;*/
+        top: 153px;
+        overflow-x: auto;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.9);
+        overflow-x: hidden;
+        /*width: 0;*/
+        width: 70%;
+        transition: .5s;
+    }
+    .mynav .mynav-links li{
+        display: block;
+        border: none;
+    }
+    .mynav .mynav-links li a{
+        display: block;
+        border: none;
+    }
+    .mynav .mynav-links .mynav-link{
+        color: #fff;
+        font-weight: 700;
+    }
+    .mynav .mynav-links li .menu-option-body a{
+        color: #f7f8fa;
+        margin-left: 45px;
+    }
+    .mynav-links li .menu-options-multiple{
+        opacity: 1;
+        position: relative;
+        height: 0px;
+        /*height: 600px;*/
+        background-color: #303030;
+        overflow: hidden;
+        padding: 0;
+    }
+    .mynav-links li .menu-options-multiple .mymenu{
+        width: 100%;
+    }
+    .mynav-links li .menu-options{
+        opacity: 1;
+        position: relative;
+        height: 0px;
+        /*height: 125px;*/
+        background-color: #303030;
+        overflow: hidden;
+        padding: 0;
+    }
+    .mynav .mynav-caret{
+        display: inline;
+    }
+    .mynav .menu-option-title{
+        border-bottom: none;
+        margin-left: 20px;
+        color: #999;
+        text-transform: uppercase;
+    }
+    #navlinksA:hover, #navlinksA:focus, #navlinksA:active{
+        color: blue;
+    }
+
+}
+@media(max-width: 576px){
+    .mynav .mynav-links{
+        position: fixed;
+        right: 0;
+        /*right: -70%;*/
+        top: 118px;
+        overflow-x: auto;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.8);
+        overflow-x: hidden;
+        /*width: 0;*/
+        width: 70%;
+        transition: .5s;
+    }
+}
